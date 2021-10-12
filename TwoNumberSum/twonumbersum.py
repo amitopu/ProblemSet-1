@@ -63,7 +63,7 @@ def twoNumberSumBetter(array, targetSum):
 def twoNumberSumBest(array, targetSum):
 	"""
 		This function takes an array of numbers and check if there exists any two numbers sum up to a target number.
-		This implementation has O(n) time complexity and O(1) space complexity.
+		This implementation has O(n) time complexity and O(n) space complexity.
 
 		args
 		---------
@@ -76,9 +76,11 @@ def twoNumberSumBest(array, targetSum):
 		False: if there is no such two sumbers which sum up to target number in the input array
 
 	"""
-
+	new_arr = {}
 	for num in array:
 		targetNum = targetSum - num
-		if(targetNum in array):
+		if(targetNum in new_arr):
 			return [num, targetNum]
+		else:
+			new_arr[num] = True
 	return False

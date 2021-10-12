@@ -20,7 +20,8 @@ class TestTwoNumberSum(unittest.TestCase):
 		self.assertFalse(twoNumberSumBest([2,3,6,4,5,7], 42))
 
 	def test_output_true_best(self):
-		self.assertEqual(twoNumberSumBest([11, -1, 3, 5, 9, 67], 10), [11, -1])
+		self.assertIn(11, twoNumberSumBest([11, -1, 3, 5, 9, 67], 10))
+		self.assertIn(-1, twoNumberSumBest([11, -1, 3, 5, 9, 67], 10))
 
 
 if __name__ == '__main__':
