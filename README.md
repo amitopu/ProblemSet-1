@@ -1,5 +1,5 @@
 # ProblemSet-1
-### This repository contains solutions to the easy problems in algoexpert.io interview question section.
+### This repository contains solutions to the easy problems in algoexpert.io from interview questions section.
 
 ### Please visit each folder to see solutions to each problem.
 
