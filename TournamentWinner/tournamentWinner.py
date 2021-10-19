@@ -1,7 +1,8 @@
 def tournamentWinner(competitions, results):
 	'''
 	This fuction takes two arrays one of which contains competitions, another array contains results of the competitions
-	 and returns a string which is the winning team. This implementation has O(n) space and time complexity.
+	 and returns a string which is the winning team. This implementation has O(n) time complexity where n is the number of competitions, 
+	 O(i) space complexity where i is the number of team.
 
 	args:
 	-------------
